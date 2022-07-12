@@ -2,6 +2,7 @@ const form = document.getElementById('form');
 const password = document.getElementById('Password');
 const username = document.getElementById('Username');
 const email = document.getElementById('Email');
+const emailV = email.value;
 const password2 = document.getElementById('password2');
 
 
@@ -60,5 +61,5 @@ form.addEventListener('submit', function(input) {
     CheckReqLength(username, 3, 15);
     CheckReqLength(password, 8, 15);
     comparePassword(password, password2);
-    
+    console.log(emailV)
 })
